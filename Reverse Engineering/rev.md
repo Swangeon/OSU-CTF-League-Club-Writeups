@@ -300,3 +300,23 @@ LAB_00100baf:
 	- In my case I wanted 4 chars
 - so fwe need the first half to go in ascending order and then the last half to be in decsending order so I choose `1221`
 - question_3 answer is `1221`
+
+## Python Script to Solve
+```Python
+#!/usr/bin/env python
+
+from pwn import *
+
+p = process("./popquiz")
+#p = remote("Challenge Server", port#)
+
+ans = [b"8997", b"hhhh", b"123321"]
+
+p.recvline()
+p.recvline()
+
+for i in range(3):
+	p.sendline(ans[i])
+
+p.interactive()
+```
