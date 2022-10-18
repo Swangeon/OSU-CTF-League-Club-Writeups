@@ -301,6 +301,8 @@ LAB_00100baf:
 - so fwe need the first half to go in ascending order and then the last half to be in decsending order so I choose `1221`
 - question_3 answer is `1221`
 
+## Flag is osu{e@s13r_th@n_ph21x_s3r13s}
+
 ## Python Script to Solve
 ```Python
 #!/usr/bin/env python
