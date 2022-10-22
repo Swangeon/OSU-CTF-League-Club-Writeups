@@ -17,7 +17,6 @@ def xor_list(bytes_list) -> bytes:
     
     return result
 
-
 if __name__ == '__main__':
     # get 3 one time pads
     otps = [urandom(MAX_LENGTH) for _ in range(3)]
